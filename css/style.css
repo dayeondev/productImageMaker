@@ -3,3 +3,12 @@
 .js-setTags{
     color: blue;
 }
+
+.form,
+.js-setTags {
+    display: none;
+}
+
+.showing{
+    display: block;
+}
