@@ -1,3 +1,96 @@
+@charset "UTF-8";
+/* 폰트 불러오기 */
+@font-face {
+    src: url("../fonts/NanumSquareRoundR.ttf");
+    font-family: 'NanumSquareRound';
+}
+
+/* 폰트 지정 */
+*{
+    font-family: 'NanumSquareRound';
+}
+
+body{
+    margin: 0;
+}
+
+/* 모든 태그에 지정되는 속성 */
+.main{
+    text-align: center;
+    background: #99ff99;
+    width: 1000px; 
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* 캡쳐 버튼 속성 */
+.main > button{
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* 모든 글자에 지정되는 속성 */
+.product_text{
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+/* 상품명에 지정되는 속성 */
+.info01{
+    font-size: 70px;
+}
+
+/* 상품정보에 지정되는 속성 */
+.info02{
+    margin-top: 20px;
+    font-size: 90px;
+}
+
+.mainImage{
+    margin-top: 50px;
+    width: 70%;
+}
+
+.info03{
+    margin-top: 60px;
+    font-size: 50px;
+    width: auto;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.info04{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.info05{
+    margin-top: 5px;
+    font-size: 30px;
+    color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .js-setTags{

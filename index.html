@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--     
     <form class="js-form form">
         <input type="text" placeholder="Input Product Name">
         
@@ -14,7 +15,48 @@
     <h4 class="js-setTags setTags"></h4>
 
     <script src="script/setTags.js"></script>
-    <script src="script/imageDownload.js"></script>
+    <script src="script/imageDownload.js"></script> -->
+    
+    <div class="main">
+        <button onclick="bodyShot()"></button>
+        <!-- <button class="saveButton"></button> -->
+
+        <input class="info01 product_text" type="text" placeholder="상품정보01">
+        <br>
+        <input class="info02 product_text" type="text" placeholder="상품정보02">
+        <br>
+
+        <img class="mainImage" src="images/Koala.jpg">
+        <br>
+
+        <input class="info03 product_text" type="text" placeholder="상품정보03">
+        <br>
+
+        
+        <input class="info04 product_text" type="text" placeholder="상품정보04">
+        
+        <input class="info05 product_text" type="text" placeholder="상품정보05">
+
+        
+    </div>
+    
+
+
+    <script src="script/html2canvas.js"></script>
+    
+    <!-- <script>
+        html2canvas(document.body, {
+            backgroundColor: "#000000"
+        }).then(function(canvas){
+            var base64image = canvas.toDataURL("image/png");
+            window.open(base64image, "_blank");
+        });
+    </script> -->
+
+   <script src="script/capture.js"></script>
+   <!-- <script src="script/jquery-3.4.1.min.js"></script> -->
+   <!-- <script src="script/fileSaver.js"></script> -->
+   <!-- <script src="script/imageResizing.js"></script> -->
 </body>
 
 </html>
