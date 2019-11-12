@@ -18,15 +18,20 @@
     <script src="script/imageDownload.js"></script> -->
     
     <div class="main">
-        <button onclick="bodyShot()"></button>
+        <button class="shotButton" onclick="bodyShot()"></button>
         <!-- <button class="saveButton"></button> -->
 
         <input class="info01 product_text" type="text" placeholder="상품정보01">
         <br>
         <input class="info02 product_text" type="text" placeholder="상품정보02">
         <br>
-
-        <img class="mainImage" src="images/Koala.jpg">
+        
+        <!-- https://webdir.tistory.com/435 -->
+        <div class="fileBox">
+            <label for="getFile">업로드</label>
+            <input type="file" id="getFile" class="getFile">
+        </div>
+        <img class="mainImage hidden" src="images/Koala.jpg">
         <br>
 
         <input class="info03 product_text" type="text" placeholder="상품정보03">
@@ -40,7 +45,20 @@
         
     </div>
     
-
+    <!-- <script>
+    
+    document.getElementById("files").onchange = function () {
+        var reader = new FileReader();
+    
+        reader.onload = function (e) {
+            // get loaded data and render thumbnail.
+            document.getElementById("image").src = e.target.result;
+        };
+    
+        // read the image file as a data URL.
+        reader.readAsDataURL(this.files[0]);
+    };
+    </script> -->
 
     <script src="script/html2canvas.js"></script>
     
@@ -54,9 +72,10 @@
     </script> -->
 
    <script src="script/capture.js"></script>
+   
    <!-- <script src="script/jquery-3.4.1.min.js"></script> -->
    <!-- <script src="script/fileSaver.js"></script> -->
-   <!-- <script src="script/imageResizing.js"></script> -->
+   <script src="script/imageResizing.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,3 @@
-//////////////////////////////////////////
-// https://minaminaworld.tistory.com/89
-//////////////////////////////////////////
-
 function bodyShot() {
     //전체 스크린 샷하기
     html2canvas(document.body)
@@ -11,7 +7,7 @@ function bodyShot() {
     //canvas 결과값을 drawImg 함수를 통해서
     //결과를 canvas 넘어줌.
     //png의 결과 값
-    // drawImg(canvas.toDataURL('image/png'));
+    drawImg(canvas.toDataURL('image/png'));
     
     //appendchild 부분을 주석을 풀게 되면 body
     //document.body.appendChild(canvas);
@@ -21,7 +17,7 @@ function bodyShot() {
     }).catch(function (err) {
     console.log(err);
     });
-}
+    }
     
     function partShot() {
     //특정부분 스크린샷
@@ -56,7 +52,7 @@ function bodyShot() {
     //그릴 image데이터를 넣어준다.
     
     }, function reject() { });
-
+    
     }
     function saveAs(uri, filename) {
     var link = document.createElement('a');
@@ -70,3 +66,10 @@ function bodyShot() {
     window.open(uri);
     }
     }
+    
+    
+    // 출처: https://minaminaworld.tistory.com/89 [미나미 블로그]
+    
+    // 출처: https://minaminaworld.tistory.com/89 [미나미 블로그]
+    
+    // 출처: https://minaminaworld.tistory.com/89 [미나미 블로그]
