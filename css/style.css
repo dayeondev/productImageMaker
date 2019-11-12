@@ -17,7 +17,7 @@ body{
 /* 모든 태그에 지정되는 속성 */
 .main{
     text-align: center;
-    background: #99ff99;
+    /* background: #99ff99; */
     width: 1000px; 
     height: auto;
     padding-top: 100px;
@@ -25,7 +25,7 @@ body{
 }
 
 /* 캡쳐 버튼 속성 */
-.main > .shotButton{
+.shotButton{
     width: 100px;
     height: 100px;
     background: none;
@@ -49,7 +49,15 @@ body{
 } */
 
 .fileBox label { 
-    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: none;
+    border: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    /* display: inline-block;
     padding: .5em .75em;
     color: #999; 
     font-size: inherit;
@@ -59,7 +67,7 @@ body{
     cursor: pointer;
     border: 1px solid #ebebeb;
     border-bottom-color: #e2e2e2;
-    border-radius: .25em; 
+    border-radius: .25em;  */
 }
 
 .fileBox input[type="file"] {

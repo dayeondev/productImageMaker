@@ -18,7 +18,10 @@
     <script src="script/imageDownload.js"></script> -->
     
     <div class="main">
-        <button class="shotButton" onclick="bodyShot()"></button>
+        <div class="fileBox">
+            <label for="getFile"></label>
+            <input type="file" id="getFile" class="getFile">
+        </div>
         <!-- <button class="saveButton"></button> -->
 
         <input class="info01 product_text" type="text" placeholder="상품정보01">
@@ -27,10 +30,7 @@
         <br>
         
         <!-- https://webdir.tistory.com/435 -->
-        <div class="fileBox">
-            <label for="getFile">업로드</label>
-            <input type="file" id="getFile" class="getFile">
-        </div>
+        
         <img class="mainImage hidden" src="images/Koala.jpg">
         <br>
 
@@ -42,7 +42,8 @@
         
         <input class="info05 product_text" type="text" placeholder="상품정보05">
 
-        
+        <button class="shotButton" onclick="bodyShot()"></button>
+      
     </div>
     
     <!-- <script>
